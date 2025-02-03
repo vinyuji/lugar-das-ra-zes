@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise do Lugar das Raízes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Método do Lugar das Raízes</h1>
+
+        <div class="input-section">
+            <h3>Numerador</h3>
+            <div id="num-container"></div>
+            <button onclick="addCoef('num-container')">Adicionar Coeficiente</button>
+        </div>
+
+        <div class="input-section">
+            <h3>Denominador</h3>
+            <div id="den-container"></div>
+            <button onclick="addCoef('den-container')">Adicionar Coeficiente</button>
+        </div>
+
+        <button onclick="plotRootLocus()">Plotar Lugar das Raízes</button>
+
+        <div id="plot"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
